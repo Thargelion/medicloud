@@ -1,0 +1,606 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+button[disabled], html input[disabled] {
+  color: #ccc;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+a {
+  color: #214cfb;
+}
+
+a:hover {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-wrapper {
+  padding-bottom: 50px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.disabled {
+  color: #ccc;
+}
+
+.mdl-layout__header {
+  width: 100%;
+}
+
+.rodal, .rodal-mask {
+  z-index: 2001;
+}
+
+.rodal-dialog {
+  text-align: center;
+  max-width: 420px;
+  z-index: 2002;
+}
+
+.rodal-title,
+.rodal-body {
+  padding: 10px 0;
+}
+.rodal-footer {
+  padding: 20px 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bg-struct {
+  background-color: #e2e2e2;
+}
+
+.valign-sub {
+  vertical-align: sub;
+}
+
+.bb-gray {
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.pb-custom1 {
+  padding-bottom: 3px;
+}
+
+.disableable[disabled] {
+  cursor: not-allowed;
+}
+
+.custom-input {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.custom-input:focus-within label {
+  color: #3f51b5;
+}
+.custom-input:focus-within input {
+  border-bottom: 2px solid #3f51b5;
+}
+.custom-input label {
+  display: block;
+  font-size: 0.84rem;
+  color: rgba(0,0,0,.7);
+}
+.custom-input .hint {
+  font-size: 0.78rem;
+  color: rgba(0,0,0,.5);
+  padding-left: 2px;
+  padding-top: 2px;
+}
+.custom-input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  width: 100%;
+  height: 34px;
+}
+.custom-input-icon {
+  float: right;
+  position: relative;
+  right: 12px;
+  bottom: 29px;
+  width: 20px;
+  cursor: pointer;
+}
+.custom-input input.has-error {
+  border-bottom: 2px solid #ff8888;
+}
+.custom-input.inline-left {
+  width: 20%;
+  float: left;
+}
+.custom-input.inline-right {
+  width: calc(80% - 10px);
+  margin-left: 10px;
+  float: right;
+}
+.custom-input.inline-left-50 {
+  width: 50%;
+  float: left;
+}
+.custom-input.inline-right-50 {
+  width: calc(50% - 10px);
+  margin-left: 10px;
+  float: right;
+}
+.custom-input-prefix {
+  position: absolute;
+  left: 0;
+  color: #5185c5;
+  cursor: default;
+}
+.form-group-recaptcha > div  {
+  display: flex;
+  place-content: center;
+  padding-bottom: 20px ;
+}
+.terms-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.formCancelButton {
+  margin-right: 10px;
+}
+.terms-text-legal {
+  border: 1px solid #e2e2e2;
+  height: 20vh;
+  overflow-y: scroll;
+  text-align: left;
+  padding: 10px 0px 0px 10px;
+}
+.terms-text-legal p {
+  font-size: 12px;
+}
+.terms-text {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 3px 0px 0px 10px;
+  font-weight: bold;
+}
+.required-field {
+  float: left;
+  padding-top: 2vh;
+  font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+  .text-xs-center {
+    text-align: center;
+  }
+  .mb-xs-10 {
+    margin-bottom: 10px !important;
+  }
+  .px-xs-0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .px-xs-15 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .xs-custom-width-265 {
+    width: 265px;
+  }
+  .xs-vertical-align-top {
+    vertical-align: top;
+  }
+  .rodal-dialog.rodal-zoom-enter {
+    width: 100% !important;
+  }
+  .generic-modal .rodal-dialog.rodal-zoom-enter {
+    width: 100% !important;
+    top: 57px;
+    height: calc(100% - 57px) !important;
+    overflow-y: auto;
+  }
+  .d-xs-block {
+    display: block !important;
+  }
+  .d-xs-none {
+    display: none !important;
+  }
+}
+.icon-size {
+  width: 20px;
+  position: relative;
+  top: 3px;
+}
+/* from https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance:textfield; /* Firefox */
+}
+/* Date Picker in the modals - react-datepicke */
+.react-datepicker-wrapper {
+  width: 100%!important;
+}.tabs-container {
+   border-bottom: 1px solid #cccccc;
+   margin: 0 20px;
+   white-space: nowrap;
+   overflow-x: auto;
+ }
+.tab {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 14px 30px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+.tab.active {
+  border-bottom: 2px solid #0067a8;
+}
+
+.mdl-navigation__link.bg-green {
+  color: #fff;
+}
+
+.bio {
+  width: 85%;
+  vertical-align: bottom;
+  padding-top: 2px;
+  margin-right: 5px;
+}
+
+.bio-contracted {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.bio-open {
+  animation-name: fadeInBio;
+  animation-duration: 1s;
+}
+.bio-icon {
+  color:#10a048;
+  stroke-width: 1;
+}
+.bio-icon-plus {
+  color:#10a048;
+  stroke-width: 1.3;
+  cursor: pointer;
+}
+.bio-align-items {
+  vertical-align: top;
+}
+@keyframes fadeInBio {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@media only screen and (max-width: 500px) {
+  .bio {width: 60%;}
+}
+
+.iti__flag {background-image: url("images/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("images/flags@2x.png");}
+}
+
+.kt-login-v2__container {
+  padding: 20px;
+}
+
+.kt-font-skype {
+  vertical-align: middle;
+}
+
+.kt-demo-icon .kt-demo-icon__class {
+  color: #000;
+}
+
+.kt-header__topbar-item {
+  cursor: pointer;
+}
+
+.clear {
+  clear: both;
+}
+
+/* MEDICLOUD */
+
+.pointer {
+  cursor: pointer;
+}
+
+.medicloud-substring:after {
+  content: '...';
+}
+
+.medicloud-user-profile-avatar {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+
+.medicloud-event--videocall {
+  background-color: #8515a1 !important;
+}
+
+.medicloud-event--videocall:after {
+  content: url("images/video-call-16.png");
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.medicloud-event--disabled {
+  background-color: #999999 !important;
+}
+
+.medicloud-event--mixed {
+  background-color: #ffb822 !important;
+}
+
+.medicloud-event--mixed:after {
+  content: url("images/mixed-16.png");
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.medicloud-remove-cursor-icon {
+  /*cursor: url("images/eraser-solid.png"), auto;*/
+  cursor: pointer;
+  transition: border ease-in 90ms;
+}
+.medicloud-remove-cursor-icon:hover {
+  border-color: #1cac81 !important;
+  border-width: 2px;
+}
+.medicloud-remove-cursor-icon.medicloud-fc-event.medicloud-fc-event--occupied:hover {
+  /* background-color: red !important;*/
+  opacity: 0.5;
+}
+
+.medicloud-fc-event {
+  background-color: #1cac81 !important;
+  border-color: #0c7d5b !important;
+  font-size: 12px !important;
+  color: #fff !important;
+}
+
+.medicloud-fc-event-pointer {
+  cursor: pointer;
+}
+
+.medicloud-fc-event-pointer:hover {
+  background-color: #07d88d !important;
+  border-color: #069c5f !important;
+}
+
+.medicloud-fc-event.fc-bg-event {
+  color: #000 !important;
+  opacity: 1 !important;
+}
+.medicloud-fc-event .fc-event-time{
+  /*overflow: hidden;
+  width: 20%;*/
+}
+.medicloud-fc-event.medicloud-fc-event--occupied {
+  background-color: #0a6aa1 !important;
+}
+.medicloud-fc-event.medicloud-fc-event--blocked {
+  background-color: #a17a22 !important;
+}
+.medicloud-fc-event.medicloud-fc-event--blocked:hover {
+  background-color: red !important;
+}
+
+.medicloud-datetime-container {
+  /*font-size: 18px;*/
+  font-size: 100%;
+}
+.medicloud-datetime-container .dayName,
+.medicloud-datetime-container .month,
+.medicloud-datetime-container .day,
+.medicloud-datetime-container .year {
+  margin: 0 0.25rem;
+}
+.medicloud-datetime-container .month {
+  margin-left: 0;
+}
+
+.medicloud--profile-performances .medicloud-datetime-container {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.tickets-list-table .medicloud-datetime-container {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.kt-widget__value .medicloud-datetime-container .dayName,
+.kt-widget__value .medicloud-datetime-container .month,
+.kt-widget__value .medicloud-datetime-container .day,
+.kt-widget__value .medicloud-datetime-container .year {
+  font-size: 12px;
+  margin: 0 0.12rem;
+}
+
+.kt-datatable__cell {
+  vertical-align: middle;
+}
+
+.kt-datatable__cell .medicloud-datetime-container .dayName,
+.kt-datatable__cell .medicloud-datetime-container .month,
+.kt-datatable__cell .medicloud-datetime-container .day,
+.kt-datatable__cell .medicloud-datetime-container .year {
+  font-size: 12px;
+  margin: 0 0.12rem;
+}
+
+.DayPicker-Day--highlighted {
+  background-color: orange;
+  color: white;
+}
+.DayPicker-Day--selected:not(.DayPicker-Day--outside) {
+  background-color: red !important;
+}
+.DayPicker-Day.DayPicker-Day--weekends:not(.DayPicker-Day--outside) {
+  background-color: orange;
+  color: white;
+}
+
+[class$="hotjarBranding"] {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.woopi-overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  overflow: auto;
+  display: flex;
+  padding: 10px;
+}
+
+.woopi-overlay-content {
+  background-color: #fff;
+  margin: auto;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.woopi-calendar-button {
+  border: 1px solid #E5E5E5;
+  color: #E42D2D;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 3px;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.woopi-calendar-dropdown {
+  padding: 10px;
+  border-top: none;
+  background-color: #FFF;
+  margin: 0 auto;
+  font-size: 120%;
+}
+
+.woopi-calendar-dropdown a {
+  display: block;
+}
+
+
+.woopi-calendar-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+  height: 375px;
+  margin: 0 auto;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  background-color: #FFF;
+  z-index: 1100;
+}
+
+.woopi-calendar-modal:focus {
+  outline: none;
+}
+
+.woopi-price-selection .woopi-overlay-content {
+  min-width: 30%;
+  padding: 20px;
+}
+
+.woopi-price-selection--container {
+  border: 1px solid #d9d9d9;
+  border-bottom: none;
+  padding: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+.woopi-price-selection--container:hover {
+  background: #eee;
+}
+.woopi-price-selection--container p {
+  margin-bottom: 0;
+}
+
+.woopi-price-selection--container:first-child{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.woopi-price-selection--container:last-child{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.woopi-price-selection--price {
+  font-size: 180%;
+}

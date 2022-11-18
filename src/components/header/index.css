@@ -1,0 +1,57 @@
+.woopi--header-wrapper {
+    display: inline-block;
+    background-color: #000;
+    width: 100%;
+    height: 64px;
+}
+.woopi--header_under {
+    padding-top: 120px;
+}
+
+.woopi--header {
+    background-color: #000;
+}
+
+.woopi--header .mdl-navigation__link,
+.woopi--header .mdl-layout__drawer-button {
+    color: #fff !important;
+}
+
+.woopi--header .mdl-navigation__link:hover,
+.woopi--header .mdl-layout__drawer-button:hover {
+    text-decoration: underline;
+}
+
+.woopi--header-logo {
+    height: 80%;
+    display: inline-block;
+}
+
+.woopi--header-logo img {
+    height: 100%;
+}
+
+.woopi--header .mdl-layout__header-row {
+    padding: 0 20px;
+}
+.woopi--header .mdl-layout__header-row .nav {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+    .woopi--header .mdl-layout__header-row {
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+
+/* BOOTSTRAP V4 */
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}

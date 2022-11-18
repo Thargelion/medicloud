@@ -1,0 +1,9 @@
+.spinner-container {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.spinner-container img {
+    height: 100%;
+}

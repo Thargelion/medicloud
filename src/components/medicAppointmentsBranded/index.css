@@ -1,0 +1,93 @@
+.medicloud-calendar-week img {
+    max-width: 10px;
+    cursor: pointer;
+}
+.medicloud-calendar-week {
+    margin: 20px 0 10px;
+}
+.medicloud-calendar-week i {
+    cursor: pointer;
+    font-size: 200%;
+}
+
+.medicloud-calendar .slots {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.flaticon-star {
+    color: goldenrod;
+}
+
+.medicloud-calendar .slots>div.slot,
+.medicloud-calendar .slots>a {
+    display: block;
+    text-decoration: none;
+    padding: 12px;
+    margin: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 3px rgba(0,0,0,.08);
+    border: 1px solid rgba(36,42,45,.55);
+    border-radius: 13px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1;
+    color: #242a2d;
+    cursor: pointer;
+}
+.medicloud-calendar .slots>div.slot:hover,
+.medicloud-calendar .slots>a:hover,
+.medicloud-calendar .slots>div.slot.selected {
+    background-color: rgb(0, 103, 168, 0.22) !important;
+    border-color: rgb(0, 103, 168) !important;
+    color: rgb(0, 103, 168);
+}
+
+@media (min-width: 769px) {
+
+    .medicloud-calendar .slots {
+        max-width: 1000px;
+    }
+    .medicloud-calendar .slots {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 650px) {
+
+    .medicloud-calendar .slots>a {
+        padding: 12px 50px;
+    }
+    .medicloud-calendar .slots>a {
+        display: block;
+        text-decoration: none;
+        padding: 12px;
+        margin: 4px;
+        box-sizing: border-box;
+        box-shadow: 0 3px 3px rgba(0,0,0,.08);
+        border: 1px solid rgba(36,42,45,.55);
+        border-radius: 13px;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 1;
+        color: #242a2d;
+    }
+}
+
+.medicloud-primary-button:disabled {
+    background-color: rgba(0,0,0,.2) !important;
+}
+

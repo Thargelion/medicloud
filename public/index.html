@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="../../">
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Turnero online de MediCloud"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title id="html-title">Turnos by MediCloud</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--begin::Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Raleway:300,400,500,600,700">
+
+    <!--end::Fonts -->
+
+    <!--begin::Page Custom Styles(used by LOGIN page) -->
+    <link href="dist/assets/css/pages/login/login-v2.css" rel="stylesheet" type="text/css">
+    <!--end::Page Custom Styles -->
+
+    <!--begin::Page Vendors Styles(used by this page) -->
+    <!--<link href="dist/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />-->
+
+    <!--end::Page Vendors Styles -->
+
+    <!--begin::Global Theme Styles(used by all pages) -->
+    <link href="dist/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="dist/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+
+    <!--end::Global Theme Styles -->
+
+    <!--begin::Layout Skins(used by all pages) -->
+    <link href="dist/assets/css/skins/header/navy.css" rel="stylesheet" type="text/css" />
+
+    <!--end::Layout Skins -->
+
+    <!-- Hotjar Tracking Code for https://app.medicloud.com.ar -->
+    <script>
+      (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3116149,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLY3KNC00H"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WLY3KNC00H');
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+
+
+    <!-- Failed To Fetch Modal -->
+    <div id="modalFailedToFetch" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">¿Tienes Internet?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Revisa tu conexión a Internet y vuelve a intentarlo en unos momentos.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-brand" data-dismiss="modal">Cerrar</button>
+            <!--<button id="modalRetry" type="button" class="btn btn-brand d-none" data-dismiss="modal">Reintentar</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- begin::Global Config(global config for global JS sciprts) -->
+    <script>
+      var KTAppOptions = {
+        "colors": {
+          "state": {
+            "brand": "#1cac81",
+            "metal": "#c4c5d6",
+            "light": "#ffffff",
+            "accent": "#00c5dc",
+            "primary": "#5867dd",
+            "success": "#34bfa3",
+            "info": "#36a3f7",
+            "warning": "#ffb822",
+            "danger": "#fd3995",
+            "focus": "#9816f4"
+          },
+          "base": {
+            "label": [
+              "#b9bdc1",
+              "#aeb2b7",
+              "#414b4c",
+              "#343d3e"
+            ],
+            "shape": [
+              "#eef4f3",
+              "#e0e9e6",
+              "#80c3af",
+              "#41675c"
+            ]
+          }
+        }
+      };
+
+      var global = KTAppOptions;
+    </script>
+
+    <!-- end::Global Config -->
+
+    <!--begin::Global Theme Bundle(used by all pages) -->
+    <script src="dist/assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+    <script src="dist/assets/js/scripts.bundle.js" type="text/javascript"></script>
+
+    <!--end::Global Theme Bundle -->
+
+    <!--begin::Page Vendors(used by this page) -->
+    <script src="dist/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
+
+    <!--end::Page Vendors -->
+
+    <!--begin::Page Scripts(used by this page) -->
+    <!--<script src="dist/assets/js/pages/dashboard.js" type="text/javascript"></script>-->
+
+    <!--begin::Page Scripts(used by this page) -->
+    <script src="dist/assets/js/pages/components/forms/widgets/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.es.min.js" integrity="sha512-5pjEAV8mgR98bRTcqwZ3An0MYSOleV04mwwYj2yw+7PBhFVf/0KcE+NEox0XrFiU5+x5t5qidmo5MgBkDD9hEw==" crossorigin="anonymous"></script>
+
+  <script>
+    // TODO Custom Script to Review Later -->
+    var initProfile = function() {
+      var profilePanel = KTUtil.get('kt_offcanvas_toolbar_profile');
+      var head = KTUtil.find(profilePanel, '.kt-offcanvas-panel__head');
+      var body = KTUtil.find(profilePanel, '.kt-offcanvas-panel__body');
+
+      var offcanvas = new KTOffcanvas(profilePanel, {
+        overlay: true,
+        baseClass: 'kt-offcanvas-panel',
+        closeBy: 'kt_offcanvas_toolbar_profile_close',
+        toggleBy: 'kt_offcanvas_toolbar_profile_toggler_btn'
+      });
+
+      KTUtil.scrollInit(body, {
+        disableForMobile: true,
+        resetHeightOnDestroy: true,
+        handleWindowResize: true,
+        height: function() {
+          var height = parseInt(KTUtil.getViewPort().height);
+
+          if (head) {
+            height = height - parseInt(KTUtil.actualHeight(head));
+            height = height - parseInt(KTUtil.css(head, 'marginBottom'));
+          }
+
+          height = height - parseInt(KTUtil.css(profilePanel, 'paddingTop'));
+          height = height - parseInt(KTUtil.css(profilePanel, 'paddingBottom'));
+
+          return height;
+        }
+      });
+    }
+
+    function toggleMobileMenu() {
+      var mobileMenuIcon = document.getElementById('kt_header_mobile_toggler');
+      if (mobileMenuIcon) {
+        mobileMenuIcon.click();
+      }
+    }
+
+    function showFailedToFetchModal() {
+      $('#modalFailedToFetch').modal('show', {
+        backdrop: 'static',
+        keyboard: false
+      });
+    }
+
+    function initPopovers() {
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    }
+
+    function showCustomModal(modalId, options) {
+      $(modalId).modal('show', options || {
+        backdrop: 'static',
+        keyboard: false
+      });
+    }
+
+    function hideCustomModal(modalId) {
+      $(modalId).modal('hide');
+    }
+  </script>
+
+    <script src="dist/assets/js/daily.js"></script>
+
+    <!-- SDK MercadoPago.js V2 -->
+    <!--<script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script>
+      // Inicializa el checkout
+      function initMPCheckout(prefId) {
+        // Agrega credenciales de SDK
+        const mp = new MercadoPago('APP_USR-3c7ef0d8-e959-4288-906e-02f9327944f6', {
+          locale: 'es-AR'
+        });
+        mp.checkout({
+          preference: {
+            id: prefId
+          },
+          render: {
+            container: '.cho-container', // Indica el nombre de la clase donde se mostrará el botón de pago
+            label: 'Pagar', // Cambia el texto del botón de pago (opcional)
+          }
+        });
+      }
+    </script>-->
+  </body>
+</html>

@@ -1,0 +1,89 @@
+.woopi-chat-wrapper {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    padding-top: 70px;
+}
+
+.woopi-chat-wrapper > div:nth-child(2) {
+    padding-top: 110px;
+}
+
+.woopi-chat-other-user-card {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    max-height: 100px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 1px 6px 8px #ddd;
+}
+
+.woopi-chat-wrapper__videocall {
+    padding-top: 0;
+}
+
+.woopi-chat-preview {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: #1EC9B7;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.woopi-chat-preview-header {
+    background-color: #19AE9F;
+    padding: 20px;
+    width: 100%;
+}
+
+.woopi-chat-preview-close {
+    font-size: 20px;
+    color: #fff !important;
+}
+
+.woopi-chat-preview-title {
+    font-size: 20px;
+    color: #fff !important;
+    padding-left: 20px;
+}
+
+.woopi-chat-preview-image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.woopi-chat-preview-image img {
+    align-self: center;
+    max-width: 90%;
+}
+
+.woopi-chat-preview-footer {
+    text-align: right;
+    padding: 20px;
+}
+
+@media screen and (min-width: 1025px) {
+    .woopi-chat-wrapper.woopi-chat-wrapper__online-page {
+        padding-top: 80px;
+    }
+
+    .woopi-chat-wrapper.woopi-chat-wrapper__online-page > div:nth-child(2) {
+        padding-top: 100px;
+    }
+}

@@ -1,0 +1,38 @@
+.fc-dot {
+    padding-left: 20px;
+}
+
+.fc-dot:before {
+    display: block;
+    content: " ";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 0 1px #fff;
+    border: 1px solid #ccc;
+}
+
+.fc-dot.dot-primary:before {
+    background-color: #5967DD;
+}
+.fc-dot.dot-success:before {
+    background-color: #1EC9B7;
+}
+.fc-dot.dot-accent:before {
+    background-color: #01C5DC;
+}
+.fc-dot.dot-focus:before {
+    background-color: #9816F4;
+}
+.fc-dot.dot-dark:before {
+    background-color: #645CA1;
+}
+.fc-dot.dot-danger:before {
+    background-color: #FD397A;
+}
+.fc-dot.dot-metal:before {
+    background-color: #D2DAE6;
+}

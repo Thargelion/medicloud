@@ -1,0 +1,124 @@
+.allow-user-select {
+    -moz-user-select: initial;
+    -webkit-user-select: initial;
+    -ms-user-select: initial;
+    -o-user-select: initial;
+    user-select: initial;
+}
+/*
+.medic-profile-cover {
+    background: url('./../../images/medic-profile-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+.profile-title img {
+    max-width: 20px;
+}
+
+.medicloud-primary-button {
+    background-color: #0067a8 !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.about-sec .profile-wrap li div.profile-title {
+    width: 20px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    color: #444;
+    position: relative;
+    top: 5px;
+}
+
+.about-sec .profile-wrap li div.profile-title.no-icon {
+    width: auto;
+}
+
+.col-line {
+    border-top: 1px solid #ccc;
+    margin: 40px 0 0;
+    padding: 20px 0 0;
+}
+
+.arrow-title {
+    font-weight: bold;
+}
+
+.medicloud-calendar-week img {
+    max-width: 10px;
+    cursor: pointer;
+}
+.medicloud-calendar-week {
+    margin: 20px 0 10px;
+}
+
+.medicloud-calendar .slots {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.medicloud-calendar .slots>a {
+    display: block;
+    text-decoration: none;
+    padding: 12px;
+    margin: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 3px rgba(0,0,0,.08);
+    border: 1px solid rgba(36,42,45,.55);
+    border-radius: 13px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1;
+    color: #242a2d;
+}
+.medicloud-calendar .slots>a:hover {
+    background-color: #242a2d;
+    color: #fff;
+}
+
+@media (min-width: 769px) {
+
+    .medicloud-calendar .slots {
+        max-width: 1000px;
+    }
+    .medicloud-calendar .slots {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 650px) {
+
+    .medicloud-calendar .slots>a {
+        padding: 12px 50px;
+    }
+    .medicloud-calendar .slots>a {
+        display: block;
+        text-decoration: none;
+        padding: 12px;
+        margin: 4px;
+        box-sizing: border-box;
+        box-shadow: 0 3px 3px rgba(0,0,0,.08);
+        border: 1px solid rgba(36,42,45,.55);
+        border-radius: 13px;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 1;
+        color: #242a2d;
+    }
+}
+*/

@@ -1,0 +1,18 @@
+.woopi-timetable-prices {
+
+}
+
+.woopi-timetable-price {
+    padding: 20px 10px;
+    border: 1px dotted #999;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.woopi-timetable-prices--buttons {
+    margin-top: 20px;
+}
+
+.woopi-timetable-prices--buttons button {
+    margin: 5px;
+}
