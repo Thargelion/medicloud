@@ -17,7 +17,7 @@
     "axios": "^0.21.1",
     "fetch-intercept": "^2.3.1",
     "intl-tel-input": "^17.0.11",
-    "moment-timezone": "^0.5.21",
+    "moment-timezone": "^0.5.35",
     "react": "^17.0.1",
     "react-add-to-calendar-hoc": "^1.0.10",
     "react-datepicker": "^3.6.0",
